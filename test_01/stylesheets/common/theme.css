@@ -1,0 +1,33 @@
+/* Theme 스타일 작성 */
+
+:root {
+
+  --main-font: "Noto Sans KR", sans-serif;
+  
+  --color-red: #e52330;
+  --color-blue: #0096e4;
+  --color-green: #c7cd1d;
+  --color-black: #181818;
+  --color-grey: #c4c4c4;
+  --color-white: #fff;
+
+  --title-fz-16: 16px;
+  --line-height-16: 24px;
+  --title-fz-24: 24px;
+  --line-height-24: 36px;
+  --title-fz-28: 28px;
+  --line-height-28: 42px;
+  --title-fz-32: 32px;
+  --line-height-32: 48px;
+
+  --text-fz-12: 12px;
+  --line-height-12: 54px;
+  --text-fz-14: 14px;
+  --line-height-14: 63px;
+  --text-fz-16: 16px;
+  --line-height-16: 72px;
+  --text-fz-18: 18px;
+  --line-height-18: 81px;
+  --text-fz-20: 20px;
+  --line-height-20: 90px;
+}

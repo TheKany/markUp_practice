@@ -1,0 +1,318 @@
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+.remove-mg {
+  margin: 0 !important;
+}
+
+.remove-pd {
+  padding: 0 !important;
+}
+
+/* 헤더 */
+.top-nav {
+  background-color: var(--color-gray-100);
+}
+
+.top-nav .top-container {
+  width: 1020px;
+  margin: 0 auto;
+}
+
+.gnb {
+  display: flex;
+  height: 34px;
+  align-items: center;
+}
+
+.gnb .gnb-list {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.gnb .gnb-list .gnb-item {
+  margin-right: 8px;
+  font-size: 12px;
+}
+
+.gnb .gnb-list .gnb-login {
+  order: 3;
+}
+
+.gnb .gnb-list .gnb-join {
+  order: 4;
+}
+
+.gnb .gnb-list .gnb-help {
+  order: 5;
+  margin-right: 0;
+}
+
+.gnb .gnb-list .gnb-cuPlay {
+  order: 1;
+}
+
+.gnb .gnb-list .gnb-marketing {
+  order: 2;
+  margin-right: 716px
+}
+
+.mid-nav {
+  display: grid;
+  margin: 0 auto;
+  width: 1020px;
+  height: 100%;
+  grid-template-rows: 90px 30px;
+  grid-template-columns: 110px 176px 550px 90px 46px;
+  grid-template-areas: 
+  'a b c d e'
+  'a f f d e';
+  gap: 0 12px;
+  place-items: center;
+  border-bottom: 1px solid var(--color-gray-100);
+}
+
+.mid-nav .logo img{
+  width: 176px;
+  height: 40px;
+}
+
+.mid-nav .button--category {
+  position: relative;
+  background-image: url('../../assets/icon/hamburger.svg');
+  background-repeat: no-repeat;
+  background-color: var(--color-blue-600);
+  background-position-x: center;
+  background-position-y: 30px;
+  background-size: 30px;
+  width: 110px;
+  height: 100%;
+  grid-area: a;
+}
+
+.mid-nav .button--category .btn-text {
+  position: absolute;
+  bottom: 30px;
+  left: 32px;
+  font-size: 12px;
+  color: var(--color-white);
+}
+
+.mid-nav .logo {
+  /* margin-left: 40px; */
+}
+
+.mid-nav .input-group {
+  /* margin-left: 30px; */
+  border: 1px solid var(--color-blue-600);
+  width: 516px;
+  height: 40px;
+}
+
+.mid-nav .input-group .input-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mid-nav .input-group .input-form .input-select {
+  background-image: url('../../assets/icon/moreDropDown.svg');
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  background-position-y: center;
+  background-color: transparent;
+  padding: 13px 0;
+  padding-left: 12px;
+  padding-right: 100px;
+  font-size: 12px;
+  color: var(--color-gray-700);
+  border: none;
+  border-right: 1px solid var(--color-gray-100);
+}
+
+.mid-nav .input-group .input-form .input-bar {
+  height: 100%;
+  padding: 5px 0;
+  border: none;
+  flex: 1;
+}
+
+.mid-nav .input-group .input-form .input-bar::placeholder {
+  font-size: 12px;
+  color: var(--color-gray-600);
+}
+
+.mid-nav .input-group .input-form button {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+}
+
+.mid-nav .myCoupang {
+  position: relative;
+  width: 90px;
+  height: 100%;
+  grid-area: d;
+  margin-top: 29px;
+  text-align: center;
+}
+
+.mid-nav .myCoupang button {
+  background-image: url('../../assets/icon/my-coupang.svg');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  position: relative;
+  top: 8px;
+  width: 90px;
+  height: 54px;
+  padding-top: 30px;
+  font-size: 12px;
+}
+
+.mid-nav .myCoupang:not(.is--active) .myCoupang-list{
+  display: none;
+}
+
+.mid-nav .myCoupang .myCoupang-list {
+  position: absolute;
+  bottom: -80px;
+  left: 0;
+  width: 90px;
+  border: 1px solid var(--color-gray-600);
+}
+
+.mid-nav .myCoupang .myCoupang-list::after {
+  content: '';
+	position: absolute;
+	border-style: solid;
+	border-width: 0 8px 10px 9px;
+	border-color: var(--color-white) transparent;
+	display: block;
+	width: 0;
+	z-index: 1;
+	top: -9px; 
+	left: 36px;
+}
+
+.mid-nav .myCoupang .myCoupang-list::before {
+	content: '';
+	position: absolute;
+	border-style: solid;
+	border-width: 0 8px 10px 9px;
+	border-color: var(--color-gray-600) transparent;
+	display: block;
+	width: 0;
+	z-index: 0;
+	top: -11px;
+	left: 36px;
+}
+
+.mid-nav .myCoupang .myCoupang-list .myCoupang-item {
+  font-size: 12px;
+  margin: 20px 0;
+}
+
+.mid-nav .cart {
+  grid-area: e;
+  position: relative;
+  width: 45px;
+  height: 100%;
+  margin-top: 29px;
+  text-align: center;
+}
+
+.mid-nav .cart button {
+  background-image: url('../../assets/icon/cart.svg');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  position: relative;
+  top: 7px;
+  width: 45px;
+  height: 58px;
+  padding-top: 25px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.cart:not(.cart--empty) .cart-empty-msg {
+  display: none;
+}
+
+.mid-nav .cart .cart-empty-msg {
+  position: relative;
+  padding: 0;
+  top: 20px;
+  left: -250px;
+  width: 300px;
+  height: 100px;
+  padding-top: 40px;
+  font-size: 14px;
+  font-weight: 400;
+  border: 1px solid var(--color-gray-300);
+}
+
+.mid-nav .cart .cart-empty-msg::after {
+  content: '';
+	position: absolute;
+	border-style: solid;
+	border-width: 0 8px 10px 9px;
+	border-color: var(--color-white) transparent;
+	display: block;
+	width: 0;
+	z-index: 1;
+	top: -9px; 
+	right: 15px;
+}
+
+.mid-nav .cart .cart-empty-msg::before {
+	content: '';
+	position: absolute;
+	border-style: solid;
+	border-width: 0 8px 10px 9px;
+	border-color: var(--color-gray-300) transparent;
+	display: block;
+	width: 0;
+	z-index: 0;
+	top: -11px;
+	right: 15px;
+}
+
+.mid-nav .cart strong {
+  position: absolute;
+  top: 2px;
+  right: 0px;
+  background-color: var(--color-blue-500);
+  color: var(--color-white);
+  border-radius: 50px;
+  width: 18px;
+  height: 18px;
+  font-size: 12px;
+  font-weight: 300;
+  padding: 2px 0;
+}
+
+.mid-nav .menu {
+  grid: f;
+  grid-column: 2 / 4;
+  width: 100%;
+}
+
+.mid-nav .menu .menu-list {
+  display: inline-block;
+}
+
+.mid-nav .menu .menu-list .menu-item {
+  font-size: 12px;
+  float: left;
+  padding: 6px 14px;
+}
